@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Yêu Em Ngày 20/10 💖</title>
+  <title>Yêu Em Ngày 20/10 💐</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
     body {
@@ -23,7 +23,8 @@
       font-size: 1.5em;
       color: #6a5acd;
       margin: 30px;
-      line-height: 1.6;
+      line-height: 1.8;
+      padding: 0 20px;
     }
     @keyframes pulse {
       0% { transform: scale(1); }
@@ -48,13 +49,18 @@
       position: absolute;
       width: 30px;
       height: 30px;
-      background-image: url('https://i.imgur.com/2z5U9nF.png'); /* hình môi hôn */
+      background-image: url('https://i.imgur.com/2z5U9nF.png');
       background-size: cover;
       animation: floatKiss 6s linear infinite;
     }
     @keyframes floatKiss {
       0% { top: 100vh; opacity: 1; }
       100% { top: -50px; opacity: 0; }
+    }
+    iframe {
+      margin-top: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
   </style>
 </head>
@@ -64,17 +70,27 @@
     Em là cô gái môi mỏng trán rô trong cuộc đời anh – tình cảm và đầy cảm hứng.<br>
     Cảm ơn em vì đã luôn bên anh, cùng anh viết nên những khoảnh khắc đầy màu sắc trong cuộc sống.<br>
     Cảm ơn em vì đã cho anh thêm một cơ hội mặc dù em còn đay nghiến và làm anh khó chịu nhưng mà anh biết em đã cố gắng rất nhiều trong thời gian qua.<br>
-    Chỉ mong rằng em cùng anh cố gắng xây dựng lại tất cả những gì đã mất, anh yêu em!
+    Chỉ mong rằng em cùng anh cố gắng xây dựng lại tất cả những gì đã mất, anh yêu em!<br><br>
+
+    Anh biết rằng tình yêu không phải lúc nào cũng là những ngày nắng đẹp. Đôi khi là những cơn giông, những lần cãi vã, những giọt nước mắt. Nhưng chính những điều đó khiến ta hiểu nhau hơn.<br><br>
+
+    Anh không hứa sẽ không làm em buồn, nhưng anh hứa sẽ luôn cố gắng để làm em hạnh phúc. Anh sẽ lắng nghe em nhiều hơn, yêu em sâu hơn, và cùng em đi qua mọi mùa trong đời – dù là nắng hay mưa.<br><br>
+
+    Cảm ơn em – vì đã là em.
   </p>
 
   <button onclick="showLove()">Anh yêu em 💘</button>
+
+  <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/h-ng-nguy-n-v-n-944348134&color=%23ff6699&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+  </iframe>
 
   <script>
     function showLove() {
       alert("Anh yêu em nhiều lắm! 💖 Mãi mãi là như thế!");
     }
 
-    // Hiệu ứng môi hôn bay
+    // Môi hôn bay
     setInterval(() => {
       const kiss = document.createElement("div");
       kiss.className = "kiss";
@@ -83,8 +99,7 @@
       kiss.style.animationDuration = (4 + Math.random() * 4) + "s";
       document.body.appendChild(kiss);
       setTimeout(() => kiss.remove(), 8000);
-    }, 500);
+    }, 600);
   </script>
 </body>
 </html>
-
