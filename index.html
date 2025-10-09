@@ -45,18 +45,6 @@
     button:hover {
       background-color: #ff1493;
     }
-    .kiss {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      background-image: url('https://i.imgur.com/2z5U9nF.png');
-      background-size: cover;
-      animation: floatKiss 6s linear infinite;
-    }
-    @keyframes floatKiss {
-      0% { top: 100vh; opacity: 1; }
-      100% { top: -50px; opacity: 0; }
-    }
     iframe {
       margin-top: 30px;
       border-radius: 15px;
@@ -76,7 +64,7 @@
 
     Anh không hứa sẽ không làm em buồn, nhưng anh hứa sẽ luôn cố gắng để làm em hạnh phúc. Anh sẽ lắng nghe em nhiều hơn, yêu em sâu hơn, và cùng em đi qua mọi mùa trong đời – dù là nắng hay mưa.<br><br>
 
-    Cảm ơn em – vì đã là em.
+    Cảm ơn em – vì đã là em. Cảm ơn em - vì đã ở lại bên anh
   </p>
 
   <button onclick="showLove()">Anh yêu em 💘</button>
@@ -89,17 +77,6 @@
     function showLove() {
       alert("Anh yêu em nhiều lắm! 💖 Mãi mãi là như thế!");
     }
-
-    // Môi hôn bay
-    setInterval(() => {
-      const kiss = document.createElement("div");
-      kiss.className = "kiss";
-      kiss.style.left = Math.random() * window.innerWidth + "px";
-      kiss.style.top = "100vh";
-      kiss.style.animationDuration = (4 + Math.random() * 4) + "s";
-      document.body.appendChild(kiss);
-      setTimeout(() => kiss.remove(), 8000);
-    }, 600);
   </script>
 </body>
 </html>
