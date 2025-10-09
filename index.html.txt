@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Yêu Em Ngày 20/10 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fff0f5, #ffe6f0);
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3.5em;
+      color: #ff1493;
+      margin-top: 40px;
+      animation: pulse 2s infinite;
+    }
+    p {
+      font-size: 1.5em;
+      color: #6a5acd;
+      margin: 30px;
+      line-height: 1.6;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: #ff69b4;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #ff1493;
+    }
+    .kiss {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-image: url('https://i.imgur.com/2z5U9nF.png'); /* hình môi hôn */
+      background-size: cover;
+      animation: floatKiss 6s linear infinite;
+    }
+    @keyframes floatKiss {
+      0% { top: 100vh; opacity: 1; }
+      100% { top: -50px; opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Chúc mừng 20/10, Em yêu 💐</h1>
+  <p>
+    Em là cô gái môi mỏng trán rô trong cuộc đời anh – tình cảm và đầy cảm hứng.<br>
+    Cảm ơn em vì đã luôn bên anh, cùng anh viết nên những khoảnh khắc đầy màu sắc trong cuộc sống.<br>
+    Cảm ơn em vì đã cho anh thêm một cơ hội mặc dù em còn đay nghiến và làm anh khó chịu nhưng mà anh biết em đã cố gắng rất nhiều trong thời gian qua.<br>
+    Chỉ mong rằng em cùng anh cố gắng xây dựng lại tất cả những gì đã mất, anh yêu em!
+  </p>
+<audio autoplay loop>
+  <source src="https://www.nhaccuatui.com/song/Kx3Kbih0rS5z.mp3" type="audio/mpeg">
+</audio>
+
+  <button onclick="showLove()">Anh yêu em 💘</button>
+
+  <script>
+    function showLove() {
+      alert("Anh yêu em nhiều lắm! 💖 Mãi mãi là như thế!");
+    }
+
+    // Hiệu ứng môi hôn bay
+    setInterval(() => {
+      const kiss = document.createElement("div");
+      kiss.className = "kiss";
+      kiss.style.left = Math.random() * window.innerWidth + "px";
+      kiss.style.top = "100vh";
+      kiss.style.animationDuration = (4 + Math.random() * 4) + "s";
+      document.body.appendChild(kiss);
+      setTimeout(() => kiss.remove(), 8000);
+    }, 500);
+  </script>
+</body>
+</html>
